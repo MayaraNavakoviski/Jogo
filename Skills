@@ -1,0 +1,49 @@
+programa
+{
+	inclua biblioteca Util
+ --> u
+	
+	funcao inicio()
+	{
+		
+		logico Oculos_Especiais = verdadeiro
+		logico Arma_Regulavel = verdadeiro
+		logico Detectores_Monstros = verdadeiro
+		logico Polaroid_Memoria = verdadeiro
+
+		inteiro skill
+
+		se(Oculos_Especiais == verdadeiro){ 
+		   skill = u.sorteia(20, 50)
+
+		   escreva("A partir de agora você tem " , skill , " % porcento, da habilidade dos Óculos Especiais." , "\n")
+		} senao{
+			escreva("A habilidade de Óculos Especiais não está diponível nesta fase.")
+		}
+
+		se(Arma_Regulavel == verdadeiro){ 
+		   skill = u.sorteia(20, 50)
+
+		   escreva("A partir de agora você tem " , skill , " % porcento, da habilidade da Arma Regulável." , "\n")
+		} senao{
+			escreva("A habilidade da Arma Regulável não está diponível nesta fase.")
+		}
+
+		se(Detectores_Monstros == verdadeiro){ 
+		   skill = u.sorteia(20, 50)
+
+		   escreva("A partir de agora você tem " , skill , " % porcento, da habilidade do Detector de Monstros." , "\n")
+		} senao{
+			escreva("A habilidade do Detector de Monstros não está diponível nesta fase.")
+		}
+
+		se(Polaroid_Memoria == verdadeiro){ 
+		   skill = u.sorteia(20, 50)
+
+		   escreva("A partir de agora você tem " , skill , " % porcento, da habilidade da Polaroid da Memória." , "\n")
+		} senao{
+			escreva("A habilidade da Polaroid da Memória não está diponível nesta fase.")
+		}
+
+	}
+}
